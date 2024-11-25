@@ -45,37 +45,36 @@
                     <label for="form-select" class="col-form-label" >Fascia d'età</label>
                  </div>
                   <div class="col-auto">
-                      <select class="form-select" aria-label="Default select example">
+                      <select class="form-select"   id="ageSelect" aria-label="Default select example">
                           <option selected>Seleziona</option>
-                          <option value="1">Maggiorenne</option>
-                          <option value="2">Minorenne</option>
-                          <option value="3">Over 65</option>
+                          <option value="1" id="Maggiorenne" >Maggiorenne</option>
+                          <option value="2" id="Minorenne" >Minorenne</option>
+                          <option value="3" id="Over" >Over 65</option>
                       </select>
                   </div>
 
                 <!-- ////// --> 
                  <div class="col dflex center">
-                     <button type="button">Genera</button>
+                     <button type="button" id="genera">Genera</button>
                  </div>
                  <div class="col dflex center">
-                    <button type="button">Annulla</button>
+                    <button type="button" id="annulla">Annulla</button>
                  </div>
             </div>  
         </form>
     </div>
-
-    <!-- <div class="col-auto dflex center">
-        <button>Genera</button>
-    </div>
-    <div class="col-auto dflex center">
-        <button>Annulla</button>
-    </div> -->
 </div>
 
 <h1>Il tuo Biglietto</h1>
 
 <div class="container-fluid">
-    
+    <h3>DETTAGLI PASSEGGERI</h3>
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">NOMINATIVO</h5>
+          <p>Nome&Cognome</p>
+        </div>
+    </div>
 </div>
 
 

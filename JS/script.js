@@ -1,27 +1,36 @@
-// const prezzoKm = 0.21;
-// const scontoMinori = 20;
-// const scontoOver = 40;
+const prezzoKm = 0.21;
+const scontoMinori = 20;
+const scontoOver = 40;
+const bottonGen = document.getElementById('genera');
+const bottonAnn = document.getElementById('annulla')
 
-// //dati da sapere
+//dati da sapere
+const kmTotali = document.getElementById('inputTextKm');
+const etaPasseggero = document.getElementById('ageSelect');
 
-// const kmTotali = prompt('Quanti KM devi percorrere?');
-// const etaPasseggero = prompt('Quanti anni Hai?');
+ //svolgimento
+ 
+ //output
+ 
+ 
+ //bottoni
+ 
+ bottonGen.addEventListener('genera', (Event) =>{
+     
+     let prezzoBiglietto;
+     let calcoloPrezzo;
+     let prezzoTotKm = kmTotali * prezzoKm;
+     
+     if (etaPasseggero == Minorenne){
+         calcoloPrezzo = (prezzoTotKm / 100) * (100 - scontoMinori)
+        } else if (etaPasseggero == Over){
+            calcoloPrezzo = (prezzoTotKm / 100) * (100 - scontoOver)
+        } else {
+            calcoloPrezzo = prezzoTotKm
+        }
+        
+        prezzoBiglietto = calcoloPrezzo.toFixed(2);
+        console.log( ` Il prezzo totale è: ${prezzoBiglietto}€ ` );
+    })
 
-// //svolgimento
-// let prezzoBiglietto;
-// let calcoloPrezzo;
-// let prezzoTotKm = kmTotali * prezzoKm;
-
-// if (etaPasseggero < 18){
-//     calcoloPrezzo = (prezzoTotKm / 100) * (100 - scontoMinori)
-// } else if (etaPasseggero > 65){
-//     calcoloPrezzo = (prezzoTotKm / 100) * (100 - scontoOver)
-// } else {
-//     calcoloPrezzo = prezzoTotKm
-// }
-
-// //output
-
-// prezzoBiglietto = calcoloPrezzo.toFixed(2);
-// console.log( ` Il prezzo totale è: ${prezzoBiglietto}€ ` );
-// alert ( ` Il prezzo totale è: ${prezzoBiglietto}€ ` );
+    
