@@ -4,3 +4,41 @@
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+
+.dflex{
+    display: flex;
+}
+
+.center{
+    justify-content: center;
+}
+
+body{
+    background-color: #c41228;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 20px;
+    color: white;
+}
+
+.container-fluid{
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: ivory;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.col-form-label{
+    color: #c41228;
+}
+
+button{
+    background-color: white;
+    color: #c41228;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
