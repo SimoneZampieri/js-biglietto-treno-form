@@ -47,6 +47,11 @@ button{
     border-radius: 10px;
 }
 
-.col1{
+.dati-passeggero{
     background-color: lightgrey;
 }
+
+h6{
+    font-weight: bold;
+}
+
